@@ -5,4 +5,7 @@ EXPOSE 8080
 COPY / /workspace
 WORKDIR /workspace
 
-RUN npm install && npm run start
+RUN npm install
+
+
+CMD ["npm", "start"]
